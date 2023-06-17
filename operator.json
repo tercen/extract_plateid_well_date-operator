@@ -1,5 +1,5 @@
 {
-  "name": "ExtractPlateIDWellDate,
+  "name": "Extract PlateID Well Date",
   "description": "Extracts a character column (text) into PlateID Well and Date",
   "tags": ["data wrangling"],
   "authors": ["tercen"],
