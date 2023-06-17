@@ -28,7 +28,8 @@ df <- df %>%
   unite(col="plate_all", contains("plat"), sep = "", remove = TRUE, na.rm = TRUE)
 
 df <- df %>%   
-  extract(col = "plate_all", into = "plate_num", regex = "([[:digit:]]+)", remove =TRUE)
+  extract(col = "plate_all", into = "plate_num", regex = "([[:digit:]]+)", remove =TRUE) %>%
+  mutate(plate_num = as.double(plate_num))
 
 well_row_key <-list()
 well_row_key['A'] <- 1
